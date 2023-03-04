@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head><title></title></head>
+    
+<style>
+
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(173deg, rgba(255,255,255,1) 66.599%, crimson 67%, rgba(0,0,0,1) 68%);  
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.txt0{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 150px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.txt{
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    margin-left: 70px;
+    position: relative;
+    font-family: sans-serif;
+    font: bolder;
+}
+
+.txt1{
+    color: rgb(0, 0, 0);
+    position: relative;
+    font-family: sans-serif;
+    margin-left: 70px;
+    font-size: 55px;
+}
+
+.dynamic-txts{
+  margin-left: 180px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: crimson;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 14px;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  border-left: 2px solid crimson;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.move{
+    margin-top: 238px;
+    position: absolute;
+    margin-left: 130px;
+}
+
+.moves{
+    position: absolute;
+}
+
+.moveit{
+  margin-top: 120px;
+  margin-left: 80px;
+}
+
+img{
+  border-radius: 50%;
+  height: auto;
+  width: 500px;
+  margin-top: 10px;
+  position: absolute;
+  border: 2px solid crimson;
+  margin-left: 60%;
+}
+
+</style>
+
+
+
+<body>
+  <div class="moveit">
+    <div class="moves">
+    <div class="txt0"><b>Hello!</b> My Name is </div>
+    <div class="txt"><a style="color: crimson">J</a>ohn <a style="color: crimson">M</a>ark <a style="color: crimson">M</a>ontecillo <br></div>
+    <div class="txt1">And I'am a</div>
+    </div>
+    <div class="move"><ul class="dynamic-txts">
+        <li><span>BSIT Student.</span></li>
+        <li><span>Gamer.</span></li>
+        <li><span>Dog Lover.</span></li>
+        <li><span>Good Student.</span></li>
+      </ul></div>
+  </div>
+<img src="image/profile.jpg">
+</body>
+</html>
